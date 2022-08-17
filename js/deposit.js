@@ -7,6 +7,11 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
     // console.log(newDipositAmount)
     // step-3
     depositField.value = "";
+
+    if (isNaN(newDipositAmount)) {
+        alert('Please Provide a Valid Number Sir!')
+        return;
+    }
     // step-4
     const depositTotalElement = document.getElementById('deposit-total');
     const previouseDepositTotalString = depositTotalElement.innerText;
@@ -21,4 +26,5 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
     // step-7
     const newBalanceTotal = previouseBalanceTotalAmount + newDipositAmount;
     balanceTotalElement.innerText = newBalanceTotal;
+    // Badsha Done
 })

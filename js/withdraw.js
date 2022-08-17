@@ -2,7 +2,7 @@ document.getElementById('btn-withdraw').addEventListener("click", function () {
     const withdrawField = document.getElementById('withdraw-field');
     const newWithdrawAmountString = withdrawField.value;
     const newWithdrawAmount = parseFloat(newWithdrawAmountString);
-    
+
     withdrawField.value = "";
 
     if (isNaN(newWithdrawAmount)) {
